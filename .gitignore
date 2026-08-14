@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment & Package Managers
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.env
+
+# Vector Store & Cache (Auto-generated on startup or indexing)
+data/chroma/
+data/embedding_cache.json
+data/index_state.json
+chroma_db/
+*.sqlite3
+
+# Logs & Temporary Files
+*.log
+logs/
+server.log
+
+# IDE & Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Antigravity / AI Agent Artifacts & Scratch
+.agent/
+.gemini/
+scratch/

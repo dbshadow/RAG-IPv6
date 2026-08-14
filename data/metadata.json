@@ -1,0 +1,1379 @@
+[
+  {
+    "rfc_id": "rfc5172",
+    "rfc_number": "5172",
+    "title": "7 pagesRFC 5172Negotiation for IPv6 Datagram Compression Using IPv6 Control Protocol",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc5172.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5172/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc5453",
+    "rfc_number": "5453",
+    "title": "6 pagesRFC 5453Reserved IPv6 Interface IdentifiersErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc5453.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5453/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc5722",
+    "rfc_number": "5722",
+    "title": "6 pagesRFC 5722Handling of Overlapping IPv6 FragmentsErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc5722.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5722/",
+    "status": "Proposed Standard RFCUpdated byrfc6946"
+  },
+  {
+    "rfc_id": "rfc5871",
+    "rfc_number": "5871",
+    "title": "3 pagesRFC 5871IANA Allocation Guidelines for the IPv6 Routing Header",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc5871.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5871/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc5942",
+    "rfc_number": "5942",
+    "title": "11 pagesRFC 5942IPv6 Subnet Model: The Relationship between Links and Subnet Prefixes",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc5942.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5942/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc5952",
+    "rfc_number": "5952",
+    "title": "14 pagesRFC 5952A Recommendation for IPv6 Address Text RepresentationErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc5952.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5952/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6106",
+    "rfc_number": "6106",
+    "title": "19 pagesRFC 6106IPv6 Router Advertisement Options for DNS Configuration",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6106.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6106/",
+    "status": "Proposed Standard RFCObsoleted byrfc8106"
+  },
+  {
+    "rfc_id": "rfc6164",
+    "rfc_number": "6164",
+    "title": "8 pagesRFC 6164Using 127-Bit IPv6 Prefixes on Inter-Router LinksErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6164.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6164/",
+    "status": "Proposed Standard RFCUpdated byrfc6547"
+  },
+  {
+    "rfc_id": "rfc6434",
+    "rfc_number": "6434",
+    "title": "30 pagesRFC 6434IPv6 Node RequirementsErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6434.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6434/",
+    "status": "Informational RFCObsoleted byrfc8504"
+  },
+  {
+    "rfc_id": "rfc6436",
+    "rfc_number": "6436",
+    "title": "13 pagesRFC 6436Rationale for Update to the IPv6 Flow Label Specification",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6436.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6436/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6437",
+    "rfc_number": "6437",
+    "title": "15 pagesRFC 6437IPv6 Flow Label Specification",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6437.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6437/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6438",
+    "rfc_number": "6438",
+    "title": "9 pagesRFC 6438Using the IPv6 Flow Label for Equal Cost Multipath Routing and Link Aggregation in Tunnels",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6438.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6438/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6547",
+    "rfc_number": "6547",
+    "title": "3 pagesRFC 6547RFC 3627 to Historic Status",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6547.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6547/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6553",
+    "rfc_number": "6553",
+    "title": "9 pagesRFC 6553The Routing Protocol for Low-Power and Lossy Networks (RPL) Option for Carrying RPL Information in Data-Plane Datagrams",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6553.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6553/",
+    "status": "Proposed Standard RFCUpdated byrfc9008,rfc9685,rfc9914"
+  },
+  {
+    "rfc_id": "rfc6554",
+    "rfc_number": "6554",
+    "title": "13 pagesRFC 6554An IPv6 Routing Header for Source Routes with the Routing Protocol for Low-Power and Lossy Networks (RPL)",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6554.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6554/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6564",
+    "rfc_number": "6564",
+    "title": "6 pagesRFC 6564A Uniform Format for IPv6 Extension HeadersErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6564.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6564/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6724",
+    "rfc_number": "6724",
+    "title": "32 pagesRFC 6724Default Address Selection for Internet Protocol Version 6 (IPv6)Errata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6724.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6724/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6788",
+    "rfc_number": "6788",
+    "title": "17 pagesRFC 6788The Line-Identification OptionErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6788.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6788/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6874",
+    "rfc_number": "6874",
+    "title": "10 pagesRFC 6874Representing IPv6 Zone Identifiers in Address Literals and Uniform Resource IdentifiersErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6874.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6874/",
+    "status": "Proposed Standard RFCObsoleted byrfc9844"
+  },
+  {
+    "rfc_id": "rfc6935",
+    "rfc_number": "6935",
+    "title": "12 pagesRFC 6935IPv6 and UDP Checksums for Tunneled PacketsErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6935.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6935/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6936",
+    "rfc_number": "6936",
+    "title": "40 pagesRFC 6936Applicability Statement for the Use of IPv6 UDP Datagrams with Zero ChecksumsErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6936.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6936/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6946",
+    "rfc_number": "6946",
+    "title": "9 pagesRFC 6946Processing of IPv6 \"Atomic\" Fragments",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6946.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6946/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6957",
+    "rfc_number": "6957",
+    "title": "16 pagesRFC 6957Duplicate Address Detection Proxy",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6957.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6957/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6980",
+    "rfc_number": "6980",
+    "title": "10 pagesRFC 6980Security Implications of IPv6 Fragmentation with IPv6 Neighbor Discovery",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc6980.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6980/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7045",
+    "rfc_number": "7045",
+    "title": "10 pagesRFC 7045Transmission and Processing of IPv6 Extension Headers",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7045.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7045/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7048",
+    "rfc_number": "7048",
+    "title": "8 pagesRFC 7048Neighbor Unreachability Detection Is Too Impatient",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7048.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7048/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7078",
+    "rfc_number": "7078",
+    "title": "12 pagesRFC 7078Distributing Address Selection Policy Using DHCPv6",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7078.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7078/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7112",
+    "rfc_number": "7112",
+    "title": "8 pagesRFC 7112Implications of Oversized IPv6 Header Chains",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7112.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7112/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7136",
+    "rfc_number": "7136",
+    "title": "10 pagesRFC 7136Significance of IPv6 Interface Identifiers",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7136.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7136/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7217",
+    "rfc_number": "7217",
+    "title": "19 pagesRFC 7217A Method for Generating Semantically Opaque Interface Identifiers with IPv6 Stateless Address Autoconfiguration (SLAAC)",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7217.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7217/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7346",
+    "rfc_number": "7346",
+    "title": "6 pagesRFC 7346IPv6 Multicast Address Scopes",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7346.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7346/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7371",
+    "rfc_number": "7371",
+    "title": "10 pagesRFC 7371Updates to the IPv6 Multicast Addressing Architecture",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7371.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7371/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7421",
+    "rfc_number": "7421",
+    "title": "24 pagesRFC 7421Analysis of the 64-bit Boundary in IPv6 Addressing",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7421.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7421/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7527",
+    "rfc_number": "7527",
+    "title": "11 pagesRFC 7527Enhanced Duplicate Address Detection",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7527.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7527/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7559",
+    "rfc_number": "7559",
+    "title": "6 pagesRFC 7559Packet-Loss Resiliency for Router Solicitations",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7559.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7559/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7721",
+    "rfc_number": "7721",
+    "title": "18 pagesRFC 7721Security and Privacy Considerations for IPv6 Address Generation Mechanisms",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7721.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7721/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7739",
+    "rfc_number": "7739",
+    "title": "20 pagesRFC 7739Security Implications of Predictable Fragment Identification Values",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc7739.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7739/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8021",
+    "rfc_number": "8021",
+    "title": "12 pagesRFC 8021Generation of IPv6 Atomic Fragments Considered Harmful",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8021.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8021/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8028",
+    "rfc_number": "8028",
+    "title": "13 pagesRFC 8028First-Hop Router Selection by Hosts in a Multi-Prefix NetworkErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8028.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8028/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8064",
+    "rfc_number": "8064",
+    "title": "9 pagesRFC 8064Recommendation on Stable IPv6 Interface Identifiers",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8064.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8064/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8096",
+    "rfc_number": "8096",
+    "title": "65 pagesRFC 8096The IPv6-Specific MIB Modules Are Obsolete",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8096.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8096/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8106",
+    "rfc_number": "8106",
+    "title": "19 pagesRFC 8106IPv6 Router Advertisement Options for DNS Configuration",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8106.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8106/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8200",
+    "rfc_number": "8200",
+    "title": "42 pagesRFC 8200Internet Protocol, Version 6 (IPv6) SpecificationErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8200.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8200/",
+    "status": "Internet Standard RFCUpdated byrfc9673Also known asSTD 86"
+  },
+  {
+    "rfc_id": "rfc8201",
+    "rfc_number": "8201",
+    "title": "19 pagesRFC 8201Path MTU Discovery for IP version 6",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8201.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8201/",
+    "status": "Internet Standard RFCAlso known asSTD 87"
+  },
+  {
+    "rfc_id": "rfc8319",
+    "rfc_number": "8319",
+    "title": "7 pagesRFC 8319Support for Adjustable Maximum Router Lifetimes per Link",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8319.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8319/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8425",
+    "rfc_number": "8425",
+    "title": "4 pagesRFC 8425IANA Considerations for IPv6 Neighbor Discovery Prefix Information Option Flags",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8425.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8425/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8504",
+    "rfc_number": "8504",
+    "title": "42 pagesRFC 8504IPv6 Node Requirements",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8504.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8504/",
+    "status": "Best Current Practice RFCAlso known asBCP 220"
+  },
+  {
+    "rfc_id": "rfc8754",
+    "rfc_number": "8754",
+    "title": "27 pagesRFC 8754IPv6 Segment Routing Header (SRH)Errata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8754.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8754/",
+    "status": "Proposed Standard RFCUpdated byrfc9800"
+  },
+  {
+    "rfc_id": "rfc8781",
+    "rfc_number": "8781",
+    "title": "10 pagesRFC 8781Discovering PREF64 in Router Advertisements",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8781.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8781/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8883",
+    "rfc_number": "8883",
+    "title": "15 pagesRFC 8883ICMPv6 Errors for Discarding Packets Due to Processing Limits",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8883.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8883/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8981",
+    "rfc_number": "8981",
+    "title": "20 pagesRFC 8981Temporary Address Extensions for Stateless Address Autoconfiguration in IPv6",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8981.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8981/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9131",
+    "rfc_number": "9131",
+    "title": "20 pagesRFC 9131Gratuitous Neighbor Discovery: Creating Neighbor Cache Entries on First-Hop Routers",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9131.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9131/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9259",
+    "rfc_number": "9259",
+    "title": "19 pagesRFC 9259Operations, Administration, and Maintenance (OAM) in Segment Routing over IPv6 (SRv6)",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9259.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9259/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9268",
+    "rfc_number": "9268",
+    "title": "20 pagesRFC 9268IPv6 Minimum Path MTU Hop-by-Hop OptionErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9268.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9268/",
+    "status": "Experimental RFC"
+  },
+  {
+    "rfc_id": "rfc9343",
+    "rfc_number": "9343",
+    "title": "20 pagesRFC 9343IPv6 Application of the Alternate-Marking MethodErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9343.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9343/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9602",
+    "rfc_number": "9602",
+    "title": "7 pagesRFC 9602Segment Routing over IPv6 (SRv6) Segment Identifiers in the IPv6 Addressing Architecture",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9602.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9602/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9631",
+    "rfc_number": "9631",
+    "title": "14 pagesRFC 9631The IPv6 Compact Routing Header (CRH)",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9631.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9631/",
+    "status": "Experimental RFC"
+  },
+  {
+    "rfc_id": "rfc9673",
+    "rfc_number": "9673",
+    "title": "16 pagesRFC 9673IPv6 Hop-by-Hop Options Processing ProceduresErrata",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9673.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9673/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9762",
+    "rfc_number": "9762",
+    "title": "14 pagesRFC 9762Using Router Advertisements to Signal the Availability of DHCPv6 Prefix Delegation to Clients",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9762.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9762/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9805",
+    "rfc_number": "9805",
+    "title": "7 pagesRFC 9805Deprecation of the IPv6 Router Alert Option for New Protocols",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9805.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9805/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc9812",
+    "rfc_number": "9812",
+    "title": "5 pagesRFC 9812Clarification of IPv6 Address Allocation Policy",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9812.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9812/",
+    "status": "Best Current Practice RFCAlso known asBCP 242"
+  },
+  {
+    "rfc_id": "rfc9837",
+    "rfc_number": "9837",
+    "title": "10 pagesRFC 9837The IPv6 VPN Service Destination Option",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9837.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9837/",
+    "status": "Experimental RFC"
+  },
+  {
+    "rfc_id": "rfc9844",
+    "rfc_number": "9844",
+    "title": "8 pagesRFC 9844Entering IPv6 Zone Identifiers in User Interfaces",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc9844.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9844/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8899",
+    "rfc_number": "8899",
+    "title": "35 pagesRFC 8899Packetization Layer Path MTU Discovery for Datagram Transports",
+    "wg": "6man",
+    "url": "https://www.rfc-editor.org/rfc/rfc8899.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8899/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc3574",
+    "rfc_number": "3574",
+    "title": "12 pagesRFC 3574Transition Scenarios for 3GPP Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3574.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3574/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3750",
+    "rfc_number": "3750",
+    "title": "20 pagesRFC 3750Unmanaged Networks IPv6 Transition Scenarios",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3750.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3750/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3789",
+    "rfc_number": "3789",
+    "title": "10 pagesRFC 3789Introduction to the Survey of IPv4 Addresses in Currently Deployed IETF Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3789.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3789/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3790",
+    "rfc_number": "3790",
+    "title": "49 pagesRFC 3790Survey of IPv4 Addresses in Currently Deployed IETF Internet Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3790.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3790/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3791",
+    "rfc_number": "3791",
+    "title": "15 pagesRFC 3791Survey of IPv4 Addresses in Currently Deployed IETF Routing Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3791.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3791/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3792",
+    "rfc_number": "3792",
+    "title": "25 pagesRFC 3792Survey of IPv4 Addresses in Currently Deployed IETF Security Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3792.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3792/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3793",
+    "rfc_number": "3793",
+    "title": "6 pagesRFC 3793Survey of IPv4 Addresses in Currently Deployed IETF Sub-IP Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3793.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3793/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3794",
+    "rfc_number": "3794",
+    "title": "31 pagesRFC 3794Survey of IPv4 Addresses in Currently Deployed IETF Transport Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3794.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3794/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3795",
+    "rfc_number": "3795",
+    "title": "50 pagesRFC 3795Survey of IPv4 Addresses in Currently Deployed IETF Application Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3795.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3795/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3796",
+    "rfc_number": "3796",
+    "title": "43 pagesRFC 3796Survey of IPv4 Addresses in Currently Deployed IETF Operations & Management Area Standards Track and Experimental Documents",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3796.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3796/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3904",
+    "rfc_number": "3904",
+    "title": "19 pagesRFC 3904Evaluation of IPv6 Transition Mechanisms for Unmanaged Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3904.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3904/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc3964",
+    "rfc_number": "3964",
+    "title": "41 pagesRFC 3964Security Considerations for 6to4Errata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc3964.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc3964/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4029",
+    "rfc_number": "4029",
+    "title": "28 pagesRFC 4029Scenarios and Analysis for Introducing IPv6 into ISP NetworksErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4029.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4029/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4038",
+    "rfc_number": "4038",
+    "title": "33 pagesRFC 4038Application Aspects of IPv6 TransitionErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4038.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4038/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4057",
+    "rfc_number": "4057",
+    "title": "17 pagesRFC 4057IPv6 Enterprise Network ScenariosErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4057.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4057/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4192",
+    "rfc_number": "4192",
+    "title": "22 pagesRFC 4192Procedures for Renumbering an IPv6 Network without a Flag Day",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4192.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4192/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4213",
+    "rfc_number": "4213",
+    "title": "27 pagesRFC 4213Basic Transition Mechanisms for IPv6 Hosts and RoutersErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4213.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4213/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc4215",
+    "rfc_number": "4215",
+    "title": "24 pagesRFC 4215Analysis on IPv6 Transition in Third Generation Partnership Project (3GPP) Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4215.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4215/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4554",
+    "rfc_number": "4554",
+    "title": "11 pagesRFC 4554Use of VLANs for IPv4-IPv6 Coexistence in Enterprise Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4554.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4554/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4779",
+    "rfc_number": "4779",
+    "title": "81 pagesRFC 4779ISP IPv6 Deployment Scenarios in Broadband Access NetworksErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4779.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4779/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4852",
+    "rfc_number": "4852",
+    "title": "32 pagesRFC 4852IPv6 Enterprise Network Analysis - IP Layer 3 FocusErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4852.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4852/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4864",
+    "rfc_number": "4864",
+    "title": "36 pagesRFC 4864Local Network Protection for IPv6",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4864.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4864/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4890",
+    "rfc_number": "4890",
+    "title": "38 pagesRFC 4890Recommendations for Filtering ICMPv6 Messages in FirewallsErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4890.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4890/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4891",
+    "rfc_number": "4891",
+    "title": "23 pagesRFC 4891Using IPsec to Secure IPv6-in-IPv4 Tunnels",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4891.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4891/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4942",
+    "rfc_number": "4942",
+    "title": "41 pagesRFC 4942IPv6 Transition/Co-existence Security Considerations",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4942.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4942/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4943",
+    "rfc_number": "4943",
+    "title": "8 pagesRFC 4943IPv6 Neighbor Discovery On-Link Assumption Considered Harmful",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4943.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4943/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc4966",
+    "rfc_number": "4966",
+    "title": "25 pagesRFC 4966Reasons to Move the Network Address Translator - Protocol Translator (NAT-PT) to Historic StatusErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc4966.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc4966/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc5156",
+    "rfc_number": "5156",
+    "title": "7 pagesRFC 5156Special-Use IPv6 Addresses",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5156.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5156/",
+    "status": "Informational RFCObsoleted byrfc6890"
+  },
+  {
+    "rfc_id": "rfc5157",
+    "rfc_number": "5157",
+    "title": "13 pagesRFC 5157IPv6 Implications for Network Scanning",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5157.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5157/",
+    "status": "Informational RFCObsoleted byrfc7707"
+  },
+  {
+    "rfc_id": "rfc5181",
+    "rfc_number": "5181",
+    "title": "16 pagesRFC 5181IPv6 Deployment Scenarios in 802.16 Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5181.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5181/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc5220",
+    "rfc_number": "5220",
+    "title": "17 pagesRFC 5220Problem Statement for Default Address Selection in Multi-Prefix Environments: Operational Issues of RFC 3484 Default RulesErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5220.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5220/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc5221",
+    "rfc_number": "5221",
+    "title": "7 pagesRFC 5221Requirements for Address Selection Mechanisms",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5221.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5221/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc5375",
+    "rfc_number": "5375",
+    "title": "35 pagesRFC 5375IPv6 Unicast Address Assignment ConsiderationsErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5375.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5375/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc5963",
+    "rfc_number": "5963",
+    "title": "10 pagesRFC 5963IPv6 Deployment in Internet Exchange Points (IXPs)",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc5963.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc5963/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6036",
+    "rfc_number": "6036",
+    "title": "23 pagesRFC 6036Emerging Service Provider Scenarios for IPv6 DeploymentErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6036.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6036/",
+    "status": "Informational RFCObsoleted byrfc9386"
+  },
+  {
+    "rfc_id": "rfc6092",
+    "rfc_number": "6092",
+    "title": "36 pagesRFC 6092Recommended Simple Security Capabilities in Customer Premises Equipment (CPE) for Providing Residential IPv6 Internet ServiceErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6092.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6092/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6104",
+    "rfc_number": "6104",
+    "title": "16 pagesRFC 6104Rogue IPv6 Router Advertisement Problem Statement",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6104.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6104/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6105",
+    "rfc_number": "6105",
+    "title": "10 pagesRFC 6105IPv6 Router Advertisement Guard",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6105.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6105/",
+    "status": "Informational RFCUpdated byrfc7113"
+  },
+  {
+    "rfc_id": "rfc6169",
+    "rfc_number": "6169",
+    "title": "20 pagesRFC 6169Security Concerns with IP Tunneling",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6169.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6169/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6177",
+    "rfc_number": "6177",
+    "title": "9 pagesRFC 6177IPv6 Address Assignment to End Sites",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6177.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6177/",
+    "status": "Best Current Practice RFCAlso known asBCP 157"
+  },
+  {
+    "rfc_id": "rfc6204",
+    "rfc_number": "6204",
+    "title": "17 pagesRFC 6204Basic Requirements for IPv6 Customer Edge RoutersErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6204.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6204/",
+    "status": "Informational RFCObsoleted byrfc7084"
+  },
+  {
+    "rfc_id": "rfc6264",
+    "rfc_number": "6264",
+    "title": "13 pagesRFC 6264An Incremental Carrier-Grade NAT (CGN) for IPv6 Transition",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6264.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6264/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6312",
+    "rfc_number": "6312",
+    "title": "17 pagesRFC 6312Mobile Networks Considerations for IPv6 Deployment",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6312.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6312/",
+    "status": "Informational RFCObsoleted byrfc6342"
+  },
+  {
+    "rfc_id": "rfc6324",
+    "rfc_number": "6324",
+    "title": "19 pagesRFC 6324Routing Loop Attack Using IPv6 Automatic Tunnels: Problem Statement and Proposed Mitigations",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6324.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6324/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6342",
+    "rfc_number": "6342",
+    "title": "17 pagesRFC 6342Mobile Networks Considerations for IPv6 Deployment",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6342.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6342/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6343",
+    "rfc_number": "6343",
+    "title": "20 pagesRFC 6343Advisory Guidelines for 6to4 Deployment",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6343.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6343/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6459",
+    "rfc_number": "6459",
+    "title": "36 pagesRFC 6459IPv6 in 3rd Generation Partnership Project (3GPP) Evolved Packet System (EPS)",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6459.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6459/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6555",
+    "rfc_number": "6555",
+    "title": "15 pagesRFC 6555Happy Eyeballs: Success with Dual-Stack HostsErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6555.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6555/",
+    "status": "Proposed Standard RFCObsoleted byrfc8305"
+  },
+  {
+    "rfc_id": "rfc6583",
+    "rfc_number": "6583",
+    "title": "12 pagesRFC 6583Operational Neighbor Discovery Problems",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6583.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6583/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6589",
+    "rfc_number": "6589",
+    "title": "27 pagesRFC 6589Considerations for Transitioning Content to IPv6",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6589.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6589/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6666",
+    "rfc_number": "6666",
+    "title": "6 pagesRFC 6666A Discard Prefix for IPv6",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6666.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6666/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6782",
+    "rfc_number": "6782",
+    "title": "29 pagesRFC 6782Wireline Incremental IPv6",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6782.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6782/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6791",
+    "rfc_number": "6791",
+    "title": "6 pagesRFC 6791Stateless Source Address Mapping for ICMPv6 Packets",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6791.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6791/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc6877",
+    "rfc_number": "6877",
+    "title": "14 pagesRFC 6877464XLAT: Combination of Stateful and Stateless Translation",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6877.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6877/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc6883",
+    "rfc_number": "6883",
+    "title": "24 pagesRFC 6883IPv6 Guidance for Internet Content Providers and Application Service Providers",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc6883.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc6883/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7066",
+    "rfc_number": "7066",
+    "title": "20 pagesRFC 7066IPv6 for Third Generation Partnership Project (3GPP) Cellular Hosts",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7066.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7066/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7084",
+    "rfc_number": "7084",
+    "title": "21 pagesRFC 7084Basic Requirements for IPv6 Customer Edge Routers",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7084.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7084/",
+    "status": "Informational RFCUpdated byrfc9096,rfc9818"
+  },
+  {
+    "rfc_id": "rfc7113",
+    "rfc_number": "7113",
+    "title": "13 pagesRFC 7113Implementation Advice for IPv6 Router Advertisement Guard (RA-Guard)",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7113.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7113/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7157",
+    "rfc_number": "7157",
+    "title": "22 pagesRFC 7157IPv6 Multihoming without Network Address Translation",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7157.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7157/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7269",
+    "rfc_number": "7269",
+    "title": "22 pagesRFC 7269NAT64 Deployment Options and Experience",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7269.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7269/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7278",
+    "rfc_number": "7278",
+    "title": "10 pagesRFC 7278Extending an IPv6 /64 Prefix from a Third Generation Partnership Project (3GPP) Mobile Interface to a LAN Link",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7278.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7278/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7335",
+    "rfc_number": "7335",
+    "title": "4 pagesRFC 7335IPv4 Service Continuity Prefix",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7335.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7335/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7381",
+    "rfc_number": "7381",
+    "title": "34 pagesRFC 7381Enterprise IPv6 Deployment Guidelines",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7381.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7381/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7445",
+    "rfc_number": "7445",
+    "title": "19 pagesRFC 7445Analysis of Failure Cases in IPv6 Roaming Scenarios",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7445.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7445/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7526",
+    "rfc_number": "7526",
+    "title": "10 pagesRFC 7526Deprecating the Anycast Prefix for 6to4 Relay Routers",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7526.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7526/",
+    "status": "Best Current Practice RFCAlso known asBCP 196"
+  },
+  {
+    "rfc_id": "rfc7608",
+    "rfc_number": "7608",
+    "title": "6 pagesRFC 7608IPv6 Prefix Length Recommendation for Forwarding",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7608.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7608/",
+    "status": "Best Current Practice RFCAlso known asBCP 198"
+  },
+  {
+    "rfc_id": "rfc7690",
+    "rfc_number": "7690",
+    "title": "9 pagesRFC 7690Close Encounters of the ICMP Type 2 Kind (Near Misses with ICMPv6 Packet Too Big (PTB))",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7690.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7690/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7755",
+    "rfc_number": "7755",
+    "title": "24 pagesRFC 7755SIIT-DC: Stateless IP/ICMP Translation for IPv6 Data Center Environments",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7755.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7755/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7756",
+    "rfc_number": "7756",
+    "title": "17 pagesRFC 7756Stateless IP/ICMP Translation for IPv6 Internet Data Center Environments (SIIT-DC): Dual Translation Mode",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7756.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7756/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc7757",
+    "rfc_number": "7757",
+    "title": "19 pagesRFC 7757Explicit Address Mappings for Stateless IP/ICMP Translation",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7757.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7757/",
+    "status": "Internet Standard RFCAlso known asSTD 103"
+  },
+  {
+    "rfc_id": "rfc7772",
+    "rfc_number": "7772",
+    "title": "6 pagesRFC 7772Reducing Energy Consumption of Router Advertisements",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7772.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7772/",
+    "status": "Best Current Practice RFCAlso known asBCP 202"
+  },
+  {
+    "rfc_id": "rfc7872",
+    "rfc_number": "7872",
+    "title": "15 pagesRFC 7872Observations on the Dropping of Packets with IPv6 Extension Headers in the Real WorldErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7872.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7872/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc7934",
+    "rfc_number": "7934",
+    "title": "15 pagesRFC 7934Host Address Availability RecommendationsErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc7934.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc7934/",
+    "status": "Best Current Practice RFCAlso known asBCP 204"
+  },
+  {
+    "rfc_id": "rfc8215",
+    "rfc_number": "8215",
+    "title": "7 pagesRFC 8215Local-Use IPv4/IPv6 Translation Prefix",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8215.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8215/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8273",
+    "rfc_number": "8273",
+    "title": "10 pagesRFC 8273Unique IPv6 Prefix per Host",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8273.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8273/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8305",
+    "rfc_number": "8305",
+    "title": "15 pagesRFC 8305Happy Eyeballs Version 2: Better Connectivity Using Concurrency",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8305.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8305/",
+    "status": "Proposed Standard RFC"
+  },
+  {
+    "rfc_id": "rfc8475",
+    "rfc_number": "8475",
+    "title": "21 pagesRFC 8475Using Conditional Router Advertisements for Enterprise Multihoming",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8475.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8475/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8585",
+    "rfc_number": "8585",
+    "title": "21 pagesRFC 8585Requirements for IPv6 Customer Edge Routers to Support IPv4-as-a-Service",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8585.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8585/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8683",
+    "rfc_number": "8683",
+    "title": "38 pagesRFC 8683Additional Deployment Guidelines for NAT64/464XLAT in Operator and Enterprise Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8683.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8683/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc8978",
+    "rfc_number": "8978",
+    "title": "11 pagesRFC 8978Reaction of IPv6 Stateless Address Autoconfiguration (SLAAC) to Flash-Renumbering Events",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc8978.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc8978/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9096",
+    "rfc_number": "9096",
+    "title": "11 pagesRFC 9096Improving the Reaction of Customer Edge Routers to IPv6 Renumbering Events",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9096.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9096/",
+    "status": "Best Current Practice RFCAlso known asBCP 234"
+  },
+  {
+    "rfc_id": "rfc9098",
+    "rfc_number": "9098",
+    "title": "17 pagesRFC 9098Operational Implications of IPv6 Packets with Extension HeadersErrata",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9098.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9098/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9313",
+    "rfc_number": "9313",
+    "title": "27 pagesRFC 9313Pros and Cons of IPv6 Transition Technologies for IPv4-as-a-Service (IPv4aaS)",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9313.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9313/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9386",
+    "rfc_number": "9386",
+    "title": "37 pagesRFC 9386IPv6 Deployment Status",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9386.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9386/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9637",
+    "rfc_number": "9637",
+    "title": "5 pagesRFC 9637Expanding the IPv6 Documentation Space",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9637.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9637/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9663",
+    "rfc_number": "9663",
+    "title": "19 pagesRFC 9663Using DHCPv6 Prefix Delegation (DHCPv6-PD) to Allocate Unique IPv6 Prefixes per Client in Large Broadcast Networks",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9663.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9663/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9818",
+    "rfc_number": "9818",
+    "title": "7 pagesRFC 9818DHCPv6 Prefix Delegation on IPv6 Customer Edge (CE) Routers in LANs",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9818.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9818/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9872",
+    "rfc_number": "9872",
+    "title": "10 pagesRFC 9872Recommendations for Discovering IPv6 Prefix Used for IPv6 Address Synthesis",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9872.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9872/",
+    "status": "Informational RFC"
+  },
+  {
+    "rfc_id": "rfc9898",
+    "rfc_number": "9898",
+    "title": "26 pagesRFC 9898Neighbor Discovery Considerations in IPv6 Deployments",
+    "wg": "v6ops",
+    "url": "https://www.rfc-editor.org/rfc/rfc9898.txt",
+    "datatracker_url": "https://datatracker.ietf.org/doc/rfc9898/",
+    "status": "Informational RFC"
+  }
+]
