@@ -443,7 +443,8 @@ async function handleSend(event) {
     </div>
   `;
   chatContainer.appendChild(assistantRow);
-  chatContainer.scrollTop = chatContainer.scrollHeight;
+  // Smoothly scroll to the start of this new conversation turn
+  userRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
   // Disable send button
   const sendBtn = document.getElementById('send-btn');
@@ -528,7 +529,6 @@ async function handleSend(event) {
             const token = JSON.parse(eventData);
             fullAnswerText += token;
             bodyElem.innerHTML = marked.parse(fullAnswerText);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
           } catch (e) {
             fullAnswerText += eventData;
             bodyElem.innerHTML = marked.parse(fullAnswerText);
@@ -550,7 +550,6 @@ async function handleSend(event) {
   } finally {
     bodyElem.classList.remove('typing-cursor');
     sendBtn.disabled = false;
-    chatContainer.scrollTop = chatContainer.scrollHeight;
   }
 }
 
