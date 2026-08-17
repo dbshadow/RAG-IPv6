@@ -35,8 +35,9 @@ venv.bak/
 .env.*.local
 *.env
 
-# Vector Store & Cache (Auto-generated on startup or indexing)
+# Vector Store, Graph Data & Cache (Auto-generated on startup or indexing)
 data/chroma/
+data/graph/
 data/embedding_cache.json
 data/index_state.json
 chroma_db/

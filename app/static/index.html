@@ -72,7 +72,21 @@
       </div>
 
       <div class="sidebar-section">
-        <h3>檢索設定 (Retrieval)</h3>
+        <h3>檢索設定 (Retrieval Mode)</h3>
+        <div class="setting-item">
+          <label>檢索核心引擎</label>
+          <div class="rag-mode-toggle">
+            <button type="button" class="mode-btn active" id="mode-vector" onclick="setRagMode('vector')" title="向量檢索 (Vector RAG)">
+              <span>📊</span> 向量
+            </button>
+            <button type="button" class="mode-btn" id="mode-graph" onclick="setRagMode('graph')" title="圖譜檢索 (Fast-GraphRAG)">
+              <span>🕸️</span> 圖譜
+            </button>
+            <button type="button" class="mode-btn" id="mode-hybrid" onclick="setRagMode('hybrid')" title="混合檢索 (Hybrid RAG)">
+              <span>⚡</span> 混合
+            </button>
+          </div>
+        </div>
         <div class="setting-item">
           <label for="wg-filter">工作組過濾</label>
           <select id="wg-filter">
@@ -92,6 +106,7 @@
         <div class="status-card" id="system-status">
           <div class="status-row"><span class="label">RFC 文件數:</span> <span class="val" id="st-rfcs">153</span></div>
           <div class="status-row"><span class="label">向量區塊數:</span> <span class="val" id="st-vectors">7,030</span></div>
+          <div class="status-row"><span class="label">圖譜實體 / 邊:</span> <span class="val" id="st-graph-nodes">155 / 153</span></div>
         </div>
       </div>
 

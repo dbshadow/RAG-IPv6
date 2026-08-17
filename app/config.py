@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     rfcs_dir: Path = Path(__file__).resolve().parent.parent / "data" / "rfcs"
     metadata_file: Path = Path(__file__).resolve().parent.parent / "data" / "metadata.json"
     chroma_dir: Path = Path(__file__).resolve().parent.parent / "data" / "chroma"
+    graph_dir: Path = Path(__file__).resolve().parent.parent / "data" / "graph"
     embedding_cache_file: Path = (
         Path(__file__).resolve().parent.parent / "data" / "embedding_cache.json"
     )

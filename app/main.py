@@ -52,7 +52,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Global generator instance
+# Global generator and store instances
 rag_generator = RAGGenerator()
 vector_store = VectorStore()
 
@@ -61,6 +61,7 @@ class ChatRequest(BaseModel):
     query: str = Field(..., description="User question regarding IPv6", min_length=1)
     top_k: int = Field(5, description="Number of RFC context chunks to retrieve", ge=1, le=15)
     wg_filter: Optional[str] = Field(None, description="Filter by working group (6man or v6ops)")
+    rag_mode: Optional[str] = Field("vector", description="RAG retrieval mode: 'vector', 'graph', or 'hybrid'")
     model: Optional[str] = Field(None, description="Chat LLM model name")
     chat_model: Optional[str] = Field(None, description="Chat LLM model name")
     embed_model: Optional[str] = Field(None, description="Embedding model name")
@@ -224,15 +225,22 @@ async def get_rfc_detail(rfc_id: str) -> Dict[str, Any]:
     }
 
 
+@app.get("/api/graph/stats")
+async def graph_stats() -> Dict[str, Any]:
+    """Retrieve statistics of the Fast-GraphRAG Knowledge Graph."""
+    return rag_generator.graph_traverser.store.stats()
+
+
 @app.post("/api/chat")
 async def chat_endpoint(request: ChatRequest) -> Dict[str, Any]:
-    """Standard non-streaming Q&A with dynamic Ollama parameters."""
+    """Standard non-streaming Q&A with dynamic Ollama parameters and RAG mode."""
     try:
         chosen_chat_model = request.chat_model or request.model
         result = await rag_generator.answer(
             query=request.query,
             top_k=request.top_k,
             wg_filter=request.wg_filter,
+            rag_mode=request.rag_mode or "vector",
             model=chosen_chat_model,
             ollama_base_url=request.ollama_base_url,
             ollama_api_token=request.ollama_api_token,
@@ -246,8 +254,9 @@ async def chat_endpoint(request: ChatRequest) -> Dict[str, Any]:
 
 @app.post("/api/chat/stream")
 async def chat_stream_endpoint(request: ChatRequest):
-    """Server-Sent Events (SSE) streaming Q&A with dynamic Ollama parameters."""
+    """Server-Sent Events (SSE) streaming Q&A with dynamic Ollama parameters and RAG mode."""
     chosen_chat_model = request.chat_model or request.model
+    chosen_rag_mode = request.rag_mode or "vector"
 
     async def event_generator():
         try:
@@ -255,6 +264,7 @@ async def chat_stream_endpoint(request: ChatRequest):
                 query=request.query,
                 top_k=request.top_k,
                 wg_filter=request.wg_filter,
+                rag_mode=chosen_rag_mode,
                 model=chosen_chat_model,
                 ollama_base_url=request.ollama_base_url,
                 ollama_api_token=request.ollama_api_token,

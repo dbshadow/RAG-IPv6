@@ -4,6 +4,7 @@
 
 let allRFCs = [];
 let currentCitations = [];
+let currentRagMode = localStorage.getItem('ipv6_rag_mode') || 'vector';
 
 // Default fallback configuration
 const DEFAULT_CONFIG = {
@@ -27,6 +28,7 @@ marked.setOptions({
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
+  initRagMode();
   loadUserConfig();
   loadSystemStatus();
   loadRFCsList();
@@ -62,6 +64,28 @@ function setTheme(theme, save = true) {
 
   const btnElem = document.getElementById('theme-toggle-btn');
   if (btnElem) btnElem.setAttribute('title', title);
+}
+
+// ----------------------------------------------------
+// RAG Mode Management (Vector / Graph / Hybrid)
+// ----------------------------------------------------
+function initRagMode() {
+  setRagMode(currentRagMode, false);
+}
+
+function setRagMode(mode, save = true) {
+  currentRagMode = mode;
+  if (save) {
+    localStorage.setItem('ipv6_rag_mode', mode);
+  }
+
+  ['mode-vector', 'mode-graph', 'mode-hybrid'].forEach((id) => {
+    const btn = document.getElementById(id);
+    if (btn) btn.classList.remove('active');
+  });
+
+  const activeBtn = document.getElementById(`mode-${mode}`);
+  if (activeBtn) activeBtn.classList.add('active');
 }
 
 // ----------------------------------------------------
@@ -289,6 +313,16 @@ async function loadSystemStatus() {
     const data = await res.json();
     document.getElementById('st-rfcs').innerText = data.total_rfcs_metadata || '153';
     document.getElementById('st-vectors').innerText = (data.vector_chunks_indexed || 0).toLocaleString();
+
+    // Fetch Graph Stats
+    const gRes = await fetch('/api/graph/stats');
+    if (gRes.ok) {
+      const gData = await gRes.json();
+      const gElem = document.getElementById('st-graph-nodes');
+      if (gElem) {
+        gElem.innerText = `${gData.total_nodes || 0} / ${gData.total_edges || 0}`;
+      }
+    }
   } catch (err) {
     console.error('Failed to load health status:', err);
   }
@@ -466,6 +500,7 @@ async function handleSend(event) {
         query: query,
         top_k: topK,
         wg_filter: wgFilter,
+        rag_mode: currentRagMode,
         chat_model: userConfig.chatModel,
         embed_model: userConfig.embedModel,
         ollama_base_url: userConfig.ollamaBaseUrl,

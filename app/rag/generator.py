@@ -1,4 +1,4 @@
-"""LLM Generation Engine interfacing with remote Ollama instance."""
+"""LLM Generation Engine interfacing with remote Ollama instance supporting Vector, Graph, and Hybrid RAG."""
 
 import json
 import logging
@@ -7,6 +7,7 @@ from typing import Any, AsyncGenerator, Dict, List, Optional
 import httpx
 
 from app.config import settings
+from app.graph.traverser import GraphTraverser
 from app.rag.prompt import SYSTEM_PROMPT, build_rag_prompt
 from app.rag.retriever import RAGRetriever, RetrievedChunk
 
@@ -14,16 +15,18 @@ logger = logging.getLogger(__name__)
 
 
 class RAGGenerator:
-    """Coordinates retrieval and streaming/non-streaming response generation."""
+    """Coordinates Vector, Graph, and Hybrid retrieval and streaming/non-streaming response generation."""
 
     def __init__(
         self,
         retriever: Optional[RAGRetriever] = None,
+        graph_traverser: Optional[GraphTraverser] = None,
         base_url: Optional[str] = None,
         api_token: Optional[str] = None,
         model: Optional[str] = None,
     ) -> None:
         self.retriever = retriever or RAGRetriever()
+        self.graph_traverser = graph_traverser or GraphTraverser()
         self.base_url = (base_url or settings.ollama_base_url).rstrip("/")
         self.api_token = api_token or settings.ollama_api_token
         self.model = model or settings.ollama_chat_model
@@ -33,44 +36,68 @@ class RAGGenerator:
         query: str,
         top_k: int = 5,
         wg_filter: Optional[str] = None,
+        rag_mode: str = "vector",  # "vector", "graph", "hybrid"
         model: Optional[str] = None,
         ollama_base_url: Optional[str] = None,
         ollama_api_token: Optional[str] = None,
         embed_model: Optional[str] = None,
     ) -> AsyncGenerator[Dict[str, Any], None]:
-        """Stream answer tokens and citation metadata using SSE events with dynamic Ollama parameters."""
+        """Stream answer tokens and citation metadata using SSE events supporting Vector, Graph, and Hybrid modes."""
         target_model = model or self.model
         target_base_url = (ollama_base_url or self.base_url).rstrip("/")
         target_api_token = ollama_api_token or self.api_token
+        mode = rag_mode.lower() if rag_mode in ("vector", "graph", "hybrid") else "vector"
 
         limits = httpx.Limits(max_keepalive_connections=5, max_connections=10)
 
         async with httpx.AsyncClient(limits=limits, timeout=120.0) as client:
-            # 1. Retrieve relevant chunks
-            chunks = await self.retriever.retrieve(
+            chunks: List[RetrievedChunk] = []
+            graph_ctx: Dict[str, Any] = {}
+
+            # 1. Vector Retrieval (if vector or hybrid)
+            if mode in ("vector", "hybrid"):
+                chunks = await self.retriever.retrieve(
+                    query=query,
+                    top_k=top_k,
+                    wg_filter=wg_filter,
+                    client=client,
+                    ollama_base_url=target_base_url,
+                    ollama_api_token=target_api_token,
+                    embed_model=embed_model,
+                )
+
+            # 2. Graph Retrieval (if graph or hybrid)
+            if mode in ("graph", "hybrid"):
+                try:
+                    graph_ctx = await self.graph_traverser.retrieve_subgraph(
+                        query=query,
+                        max_nodes=8,
+                        max_edges=12,
+                    )
+                except Exception as g_err:
+                    logger.warning("Graph traversal error: %s", g_err)
+
+            # 3. Build augmented prompt and unified citations
+            user_prompt, citations = build_rag_prompt(
                 query=query,
-                top_k=top_k,
-                wg_filter=wg_filter,
-                client=client,
-                ollama_base_url=target_base_url,
-                ollama_api_token=target_api_token,
-                embed_model=embed_model,
+                chunks=chunks,
+                graph_context=graph_ctx,
+                rag_mode=mode,
             )
 
-            # 2. Build prompt and citation summary
-            user_prompt, citations = build_rag_prompt(query, chunks)
-
-            # 3. Yield initial metadata event with citations
+            # 4. Yield initial metadata event with citations & mode
             yield {
                 "event": "citations",
                 "data": {
                     "query": query,
+                    "rag_mode": mode,
                     "citations": citations,
+                    "graph_nodes": graph_ctx.get("nodes", []),
                     "model": target_model,
                 },
             }
 
-            # 4. Stream LLM generation from Ollama
+            # 5. Stream LLM generation from Ollama
             headers = {
                 "Authorization": f"Bearer {target_api_token}",
                 "Content-Type": "application/json",
@@ -119,6 +146,7 @@ class RAGGenerator:
                                     "data": {
                                         "total_duration": data.get("total_duration"),
                                         "eval_count": data.get("eval_count"),
+                                        "rag_mode": mode,
                                     },
                                 }
                                 break
@@ -133,29 +161,51 @@ class RAGGenerator:
         query: str,
         top_k: int = 5,
         wg_filter: Optional[str] = None,
+        rag_mode: str = "vector",
         model: Optional[str] = None,
         ollama_base_url: Optional[str] = None,
         ollama_api_token: Optional[str] = None,
         embed_model: Optional[str] = None,
     ) -> Dict[str, Any]:
-        """Non-streaming Q&A method with dynamic Ollama parameters."""
+        """Non-streaming Q&A method supporting Vector, Graph, and Hybrid modes."""
         target_model = model or self.model
         target_base_url = (ollama_base_url or self.base_url).rstrip("/")
         target_api_token = ollama_api_token or self.api_token
+        mode = rag_mode.lower() if rag_mode in ("vector", "graph", "hybrid") else "vector"
 
         limits = httpx.Limits(max_keepalive_connections=5, max_connections=10)
 
         async with httpx.AsyncClient(limits=limits, timeout=120.0) as client:
-            chunks = await self.retriever.retrieve(
+            chunks: List[RetrievedChunk] = []
+            graph_ctx: Dict[str, Any] = {}
+
+            if mode in ("vector", "hybrid"):
+                chunks = await self.retriever.retrieve(
+                    query=query,
+                    top_k=top_k,
+                    wg_filter=wg_filter,
+                    client=client,
+                    ollama_base_url=target_base_url,
+                    ollama_api_token=target_api_token,
+                    embed_model=embed_model,
+                )
+
+            if mode in ("graph", "hybrid"):
+                try:
+                    graph_ctx = await self.graph_traverser.retrieve_subgraph(
+                        query=query,
+                        max_nodes=8,
+                        max_edges=12,
+                    )
+                except Exception as g_err:
+                    logger.warning("Graph traversal error: %s", g_err)
+
+            user_prompt, citations = build_rag_prompt(
                 query=query,
-                top_k=top_k,
-                wg_filter=wg_filter,
-                client=client,
-                ollama_base_url=target_base_url,
-                ollama_api_token=target_api_token,
-                embed_model=embed_model,
+                chunks=chunks,
+                graph_context=graph_ctx,
+                rag_mode=mode,
             )
-            user_prompt, citations = build_rag_prompt(query, chunks)
 
             headers = {
                 "Authorization": f"Bearer {target_api_token}",
@@ -184,7 +234,9 @@ class RAGGenerator:
             result = resp.json()
             return {
                 "query": query,
+                "rag_mode": mode,
                 "answer": result.get("response", ""),
                 "citations": citations,
+                "graph_nodes": graph_ctx.get("nodes", []),
                 "model": target_model,
             }
