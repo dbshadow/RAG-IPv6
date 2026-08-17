@@ -47,6 +47,7 @@ chroma_db/
 *.log
 logs/
 server.log
+*.html
 
 # IDE & Editor Files
 .vscode/
