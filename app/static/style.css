@@ -541,8 +541,47 @@ body {
   border-bottom-right-radius: 2px;
 }
 
-.msg-row.assistant .msg-bubble {
-  border-bottom-left-radius: 2px;
+/* Router Decision Badge */
+.router-badge-box {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.router-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.02em;
+}
+
+.router-badge.direct {
+  background: var(--bg-subtle, #f1f5f9);
+  color: var(--text-muted);
+  border: 1px solid var(--border-color);
+}
+
+.router-badge.reuse {
+  background: rgba(125, 143, 124, 0.18);
+  color: #5b755a;
+  border: 1px solid rgba(125, 143, 124, 0.35);
+}
+
+.router-badge.rewrite {
+  background: rgba(143, 125, 150, 0.15);
+  color: #8f7d96;
+  border: 1px solid rgba(143, 125, 150, 0.3);
+}
+
+.router-badge.standalone {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border: 1px solid rgba(56, 189, 248, 0.3);
 }
 
 /* Citations Bar */

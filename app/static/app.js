@@ -5,6 +5,7 @@
 let allRFCs = [];
 let currentCitations = [];
 let currentRagMode = localStorage.getItem('ipv6_rag_mode') || 'vector';
+let conversationHistory = []; // Multi-turn chat history [{role: 'user'|'assistant', content: '...'}]
 
 // Default fallback configuration
 const DEFAULT_CONFIG = {
@@ -390,6 +391,8 @@ function askPreset(question) {
 }
 
 function clearChat() {
+  conversationHistory = [];
+  currentCitations = [];
   const container = document.getElementById('chat-messages');
   container.innerHTML = `
     <div class="welcome-container" id="welcome-screen">
@@ -466,6 +469,7 @@ async function handleSend(event) {
   assistantRow.innerHTML = `
     <div class="msg-avatar">🤖</div>
     <div class="msg-bubble">
+      <div class="router-badge-box" id="router-${msgId}" style="display:none;"></div>
       <div class="citations-box" id="citations-${msgId}" style="display:none;">
         <div class="citations-header">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
@@ -473,14 +477,12 @@ async function handleSend(event) {
         </div>
         <div class="citation-chips" id="chips-${msgId}"></div>
       </div>
-      <div class="markdown-body typing-cursor" id="body-${msgId}">正在檢索 RFC 知識庫並透過 ${escapeHtml(userConfig.chatModel)} 生成解答...</div>
+      <div class="markdown-body typing-cursor" id="body-${msgId}">正在分析問題意圖與檢索脈絡...</div>
     </div>
   `;
   chatContainer.appendChild(assistantRow);
-  // Smoothly scroll to the start of this new conversation turn
   userRow.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
-  // Disable send button
   const sendBtn = document.getElementById('send-btn');
   sendBtn.disabled = true;
 
@@ -489,15 +491,18 @@ async function handleSend(event) {
 
   let fullAnswerText = '';
   const bodyElem = document.getElementById(`body-${msgId}`);
+  const routerBox = document.getElementById(`router-${msgId}`);
   const citationsBox = document.getElementById(`citations-${msgId}`);
   const chipsContainer = document.getElementById(`chips-${msgId}`);
 
   try {
+    const payloadHistory = conversationHistory.slice(-6); // Last 3 rounds
     const response = await fetch('/api/chat/stream', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         query: query,
+        history: payloadHistory,
         top_k: topK,
         wg_filter: wgFilter,
         rag_mode: currentRagMode,
@@ -538,7 +543,23 @@ async function handleSend(event) {
           }
         }
 
-        if (eventType === 'citations') {
+        if (eventType === 'router') {
+          try {
+            const rData = JSON.parse(eventData);
+            routerBox.style.display = 'flex';
+            if (rData.decision === 'DIRECT_GENERATE') {
+              routerBox.innerHTML = `<span class="router-badge direct">⚡ 對話直連 (零檢索)</span>`;
+            } else if (rData.decision === 'REUSE_CONTEXT') {
+              routerBox.innerHTML = `<span class="router-badge reuse" title="${escapeHtml(rData.reason || '')}">🔄 沿用上下文 (零檢索)</span>`;
+            } else if (rData.decision === 'REWRITE_AND_SEARCH') {
+              routerBox.innerHTML = `<span class="router-badge rewrite" title="${escapeHtml(rData.reason || '')}">🔍 獨立檢索焦點: ${escapeHtml(rData.standalone_query || '')}</span>`;
+            } else {
+              routerBox.innerHTML = `<span class="router-badge standalone">📊 全域檢索</span>`;
+            }
+          } catch (e) {
+            console.error('Failed to parse router event:', e);
+          }
+        } else if (eventType === 'citations') {
           try {
             const parsed = JSON.parse(eventData);
             const citations = parsed.citations || [];
@@ -574,6 +595,9 @@ async function handleSend(event) {
           )}</div>`;
         } else if (eventType === 'done') {
           bodyElem.classList.remove('typing-cursor');
+          // Add this successful exchange to conversation history
+          conversationHistory.push({ role: 'user', content: query });
+          conversationHistory.push({ role: 'assistant', content: fullAnswerText });
         }
       }
     }

@@ -57,8 +57,14 @@ rag_generator = RAGGenerator()
 vector_store = VectorStore()
 
 
+class ChatMessage(BaseModel):
+    role: str = Field(..., description="Message role ('user' or 'assistant')")
+    content: str = Field(..., description="Message text content")
+
+
 class ChatRequest(BaseModel):
     query: str = Field(..., description="User question regarding IPv6", min_length=1)
+    history: Optional[List[ChatMessage]] = Field(None, description="Previous conversation turns")
     top_k: int = Field(5, description="Number of RFC context chunks to retrieve", ge=1, le=15)
     wg_filter: Optional[str] = Field(None, description="Filter by working group (6man or v6ops)")
     rag_mode: Optional[str] = Field("vector", description="RAG retrieval mode: 'vector', 'graph', or 'hybrid'")
@@ -233,11 +239,13 @@ async def graph_stats() -> Dict[str, Any]:
 
 @app.post("/api/chat")
 async def chat_endpoint(request: ChatRequest) -> Dict[str, Any]:
-    """Standard non-streaming Q&A with dynamic Ollama parameters and RAG mode."""
+    """Standard non-streaming Q&A with dynamic Ollama parameters, multi-turn history and RAG mode."""
     try:
         chosen_chat_model = request.chat_model or request.model
+        history_list = [m.model_dump() for m in request.history] if request.history else None
         result = await rag_generator.answer(
             query=request.query,
+            history=history_list,
             top_k=request.top_k,
             wg_filter=request.wg_filter,
             rag_mode=request.rag_mode or "vector",
@@ -254,14 +262,16 @@ async def chat_endpoint(request: ChatRequest) -> Dict[str, Any]:
 
 @app.post("/api/chat/stream")
 async def chat_stream_endpoint(request: ChatRequest):
-    """Server-Sent Events (SSE) streaming Q&A with dynamic Ollama parameters and RAG mode."""
+    """Server-Sent Events (SSE) streaming Q&A with dynamic Ollama parameters, multi-turn history and RAG mode."""
     chosen_chat_model = request.chat_model or request.model
     chosen_rag_mode = request.rag_mode or "vector"
+    history_list = [m.model_dump() for m in request.history] if request.history else None
 
     async def event_generator():
         try:
             async for event_item in rag_generator.answer_stream(
                 query=request.query,
+                history=history_list,
                 top_k=request.top_k,
                 wg_filter=request.wg_filter,
                 rag_mode=chosen_rag_mode,

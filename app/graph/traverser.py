@@ -49,7 +49,7 @@ class GraphTraverser:
         # 2. Semantic Embedding search if entity embeddings exist
         if self.store.entity_embeddings:
             try:
-                q_emb = await self.embedder.get_query_embedding(query)
+                q_emb = await self.embedder.get_embedding(query)
                 q_vec = np.array(q_emb, dtype=np.float32)
                 q_norm = np.linalg.norm(q_vec)
 
